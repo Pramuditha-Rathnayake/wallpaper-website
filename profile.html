@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Details</title>
+    <!-- FontAwesome Icons for Social Buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #111827;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Home Button at Top Right */
+        .home-nav {
+            position: absolute;
+            top: 40px;
+            right: 80px;
+        }
+
+        .home-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .home-nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Profile Card Box */
+        .profile-card {
+            background-color: #1f2937;
+            border-radius: 20px;
+            padding: 40px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            max-width: 750px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            border: 1px solid #374151;
+        }
+
+        /* Left Section: Image and Sinhala Quote */
+        .profile-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 30px;
+            border-right: 1px solid #374151;
+        }
+
+        .profile-img-container {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #a855f7, #ec4899, #eab308);
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .quote-text {
+            color: #38bdf8;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Right Section: Details & Social Icons */
+        .profile-right {
+            flex: 1;
+        }
+
+        .profile-title {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .info-group {
+            margin-bottom: 30px;
+        }
+
+        .info-row {
+            display: flex;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .info-label {
+            width: 100px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .info-value {
+            color: #e5e7eb;
+        }
+
+        /* Social Media Icons Container */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .icon-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .icon-btn:hover {
+            transform: translateY(-3px);
+            background-color: #38bdf8;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Right Home Button -->
+    <nav class="home-nav">
+        <a href="index.html">Home</a>
+    </nav>
+
+    <!-- Main Profile Card -->
+    <div class="profile-card">
+        
+        <!-- Left Side: Image and Quote -->
+        <div class="profile-left">
+            <div class="profile-img-container">
+                <!-- Replace 'profile.jpg' with your image filename if different -->
+                <img src="NMIM9085.jpg" alt="Pramuditha" class="profile-img">
+            </div>
+            <p class="quote-text">ඉතින් කොහොමද ළමයෝ</p>
+        </div>
+
+        <!-- Right Side: Details -->
+        <div class="profile-right">
+            <h2 class="profile-title">Profile Details</h2>
+
+            <div class="info-group">
+                <div class="info-row" style="margin-bottom: 18px;">
+                    <span class="info-label" style="width: auto; color: #ffffff;">@ PRAMUDITHA shmpr</span>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Mobile :</span>
+                    <span class="info-value">+94 703811433</span>
+                </div>
+
+                <div class="info-row">
+                    <span class="info-label">Email :</span>
+                    <span class="info-value">Pramudithashmpr@gmail.com</span>
+                </div>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="social-icons">
+                <!-- Facebook -->
+                <a href="#" class="icon-btn"><i class="fab fa-facebook-f"></i></a>
+                
+                <!-- Instagram -->
+                <a href="#" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                
+                <!-- WhatsApp (Direct Chat Link) -->
+                <a href="https://wa.me/94703811433" target="_blank" class="icon-btn"><i class="fab fa-whatsapp"></i></a>
+                
+                <!-- Twitter -->
+                <a href="#" class="icon-btn"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
