@@ -73,16 +73,7 @@
             width: 130px;
             height: 130px;
             border-radius: 50%;
-            padding: 4px;
-            background: linear-gradient(135deg, #a855f7, #ec4899, #eab308);
-            margin-bottom: 20px;
-        }
-
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
+            overflow: hidden;
         }
 
         .quote-text {
@@ -90,6 +81,7 @@
             font-size: 15px;
             font-weight: 500;
             text-align: center;
+            margin-top: 15px;
         }
 
         /* Right Section: Details & Social Icons */
@@ -164,11 +156,27 @@
     <!-- Main Profile Card -->
     <div class="profile-card">
         
-        <!-- Left Side: Image and Quote -->
+        <!-- Left Side: Custom Logo and Quote -->
         <div class="profile-left">
-            <div class="profile-img-container">
-                <!-- Replace 'profile.jpg' with your image filename if different -->
-                <img src="NMIM9085.jpg" alt="Pramuditha" class="profile-img">
+            <div class="profile-img-container" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc); padding: 3px; border-radius: 50%;">
+                <svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="border-radius: 50%; background: #0f172a;">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#38bdf8" />
+                            <stop offset="50%" stop-color="#818cf8" />
+                            <stop offset="100%" stop-color="#c084fc" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="5" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <rect x="35" y="35" width="130" height="130" rx="30" fill="none" stroke="url(#logoGradient)" stroke-width="6" opacity="0.6"/>
+                    <circle cx="80" cy="80" r="35" fill="#38bdf8" opacity="0.3" filter="url(#glow)"/>
+                    <circle cx="120" cy="120" r="40" fill="#c084fc" opacity="0.3" filter="url(#glow)"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="url(#logoGradient)" font-family="'Segoe UI', Tahoma, sans-serif" font-size="85" font-weight="900" style="letter-spacing: -2px;">P</text>
+                    <circle cx="135" cy="65" r="8" fill="#38bdf8"/>
+                </svg>
             </div>
             <p class="quote-text">ඉතින් කොහොමද ළමයෝ</p>
         </div>
@@ -184,27 +192,20 @@
                 
                 <div class="info-row">
                     <span class="info-label">Mobile :</span>
-                    <span class="info-value">+94 703811433</span>
+                    <span class="info-value">+94 XX XXX XXXX</span>
                 </div>
 
                 <div class="info-row">
                     <span class="info-label">Email :</span>
-                    <span class="info-value">Pramudithashmpr@gmail.com</span>
+                    <span class="info-value">your-email@gmail.com</span>
                 </div>
             </div>
 
             <!-- Social Media Buttons -->
             <div class="social-icons">
-                <!-- Facebook -->
                 <a href="#" class="icon-btn"><i class="fab fa-facebook-f"></i></a>
-                
-                <!-- Instagram -->
                 <a href="#" class="icon-btn"><i class="fab fa-instagram"></i></a>
-                
-                <!-- WhatsApp (Direct Chat Link) -->
-                <a href="https://wa.me/94703811433" target="_blank" class="icon-btn"><i class="fab fa-whatsapp"></i></a>
-                
-                <!-- Twitter -->
+                <a href="#" class="icon-btn"><i class="fab fa-whatsapp"></i></a>
                 <a href="#" class="icon-btn"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
